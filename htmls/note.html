@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notebooks </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+  
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/912+mfE2XBL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/7148EEf+EbL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/91Lw+Krch6L._AC_UF350,350_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/71ts-10g8lL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/713p5z46xDL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Notebooks</h2>
+      <p class="price">₹699</p>
+      <p class="description">
+        A high-quality notebook perfect for writing, journaling, and note-taking. Featuring smooth pages and a durable cover, 
+        this notebook is ideal for students, professionals,
+         and creatives alike. It’s designed to provide a comfortable writing experience whether you're at school, work, or at home.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Premium Spiral Notebook</li>
+          <li><strong>Material:</strong> 100% recycled paper</li>
+          <li><strong>Size:</strong> A5 (14.8 cm x 21 cm) or A4 (21 cm x 29.7 cm)</li>
+          <li><strong>Page Count:</strong> 100 pages</li>
+          <li><strong>Page Type:</strong> Lined pages with margin</li>
+          <li><strong>Cover Type:</strong> Softcover or hardcover options available</li>
+          <li><strong>Binding:</strong> Spiral binding for easy page turning</li>
+          <li><strong>Paper Weight:</strong> 70gsm for smooth writing</li>
+          <li><strong>Color Options:</strong> Black, Blue, Red, Green</li>
+          <li><strong>Usage:</strong> Ideal for school, office, journaling, and sketching</li>
+          <li><strong>Environmentally Friendly:</strong> Made from eco-friendly materials</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

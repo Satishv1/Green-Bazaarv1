@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiffin </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71J1RNKCQFL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/71vZHKBN2JL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/71YvIMllOVL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/81thgl7YhpL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/71oLU9A1tyL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Tiffin </h2>
+      <p class="price">₹499</p>
+      <p class="description">
+        A durable and convenient tiffin box designed to keep your meals fresh and organized. Made from high-quality materials,
+         this tiffin box is perfect for carrying lunch, snacks, or meals on the go. 
+        Its multi-tiered design allows for separate compartments, making it easy to carry a variety of foods without mixing them
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Multi-Tier Stainless Steel Tiffin Box</li>
+          <li><strong>Material:</strong> High-quality stainless steel or BPA-free plastic</li>
+          <li><strong>Capacity:</strong> 3-tier or 4-tier compartments (depending on design)</li>
+          <li><strong>Dimensions:</strong> Varies by size, typically 18 cm x 18 cm x 25 cm</li>
+          <li><strong>Color Options:</strong> Silver, Blue, Black, Red</li>
+          <li><strong>Design:</strong> Stackable with secure clasps for easy carrying</li>
+          <li><strong>Insulation:</strong> Some models feature thermal insulation for keeping food warm</li>
+          <li><strong>Leak-Proof:</strong> Leak-proof lids with airtight seals to prevent spills</li>
+          <li><strong>Compartments:</strong> Multiple compartments to separate different foods</li>
+          <li><strong>Easy to Clean:</strong> Dishwasher safe (depending on material), easy to wipe clean</li>
+          <li><strong>Portability:</strong> Compact and lightweight for easy carrying in bags or backpacks</li>
+          <li><strong>Uses:</strong> Ideal for office lunches, school lunches, picnics, or travel</li>
+          <li><strong>Durability:</strong> Scratch-resistant and long-lasting design</li>
+          <li><strong>Care Instructions:</strong> Hand wash recommended for the best care</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
+

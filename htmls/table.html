@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Table </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/61Cx6tSts6L._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/51gsdkw3hQL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/61Kia5ppDML._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/61okssN3Y6L._AC_UF894,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/71nu4BoDkqL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Study Table </h2>
+      <p class="price">₹500</p>
+      <p class="description">
+        A functional and stylish study table designed to provide a comfortable workspace for study or work.
+         With ample storage space for books, stationery, and electronics, this study table offers a tidy, organized setup.
+         Its sturdy construction and modern design make it ideal for home offices, bedrooms, or study rooms
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Modern Study Table</li>
+          <li><strong>Material:</strong> MDF wood or solid wood with a laminate finish</li>
+          <li><strong>Dimensions:</strong> 120 cm x 60 cm x 75 cm (varies by design)</li>
+          <li><strong>Color Options:</strong> Natural wood, Walnut, Black, White</li>
+          <li><strong>Tabletop Surface:</strong> Smooth, scratch-resistant surface for writing and working</li>
+          <li><strong>Design:</strong> Minimalist, contemporary, or industrial design options available</li>
+          <li><strong>Leg Type:</strong> Sturdy metal or wooden legs for added support</li>
+          <li><strong>Weight Capacity:</strong> Supports up to 50 kg of weight (varies by design)</li>
+          <li><strong>Assembly:</strong> Some assembly required (tools and instructions included)</li>
+          <li><strong>Usage:</strong> Perfect for home offices, study rooms, bedrooms, or dorms</li>
+          <li><strong>Durability:</strong> Scratch-resistant, easy-to-clean surface, and long-lasting design</li>
+          <li><strong>Care Instructions:</strong> Wipe with a damp cloth for cleaning</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

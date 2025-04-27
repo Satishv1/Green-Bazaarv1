@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dish Box </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71mOrpMzy2L._AC_UF350,350_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/61Q9gw+8ARL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/618xdGbDcRL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/61ClGp9oNNL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/71tI7G0G7bL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Dish Box</h2>
+      <p class="price">₹200</p>
+      <p class="description">
+        A durable, BPA-free plastic box designed for storing dishes and leftovers. With a 
+        secure snap-lock lid and stackable design, it keeps food fresh and organized in the fridge or freezer.
+         Ideal for everyday use, it's microwave and dishwasher safe (without the lid)
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Plastic Storage Box for Dishes</li>
+          <li><strong>Material:</strong> BPA-free, food-safe plastic</li>
+          <li><strong>Capacity:</strong> 3 liters</li>
+          <li><strong>Dimensions:</strong> 30 cm (L) x 20 cm (W) x 15 cm (H)</li>
+          <li><strong>Weight:</strong> 400 grams</li>
+          <li><strong>Color Options:</strong> Transparent, Blue, Green</li>
+          <li><strong>Design Features:</strong>
+          <li><strong>Usage:</strong> Ideal for storing leftover dishes, salads, fruits, and snacks</li>
+          <li><strong>Environmental Impact:</strong> Reusable and recyclable material</li>
+          <li><strong>Warranty:</strong> 6-month manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

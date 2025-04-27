@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gas Stove </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71CJxtqgUtL._AC_UF894,1000_QL80_FMwebp_.png" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/5133BtJwsvL._AC_UF350,350_QL80_FMwebp_.png" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/61A2OYtJ3OL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/713hfS1wEHL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/817yfqmvyNL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Gas Stove</h2>
+      <p class="price">₹2500</p>
+      <p class="description">
+        A reliable and efficient gas stove designed for quick and even heating. Featuring multiple burners with adjustable flame control, 
+        this stove allows you to cook a variety of meals with ease.
+         Its sturdy build and sleek design make it a perfect addition to any kitchen
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> 4-Burner Gas Stove</li>
+          <li><strong>Material:</strong> Stainless steel body with enamel-coated burners</li>
+          <li><strong>Dimensions:</strong> 60 cm (L) x 50 cm (W) x 10 cm (H)</li>
+          <li><strong>Number of Burners:</strong> 4 (2 small, 2 large)</li>
+          <li><strong>Ignition Type:</strong> Manual ignition (with matchstick or lighter)</li>
+          <li><strong>Flame Control:</strong> Adjustable flame control knobs for each burner</li>
+          <li><strong>Burner Efficiency:</strong> High-efficiency burners for even heat distribution</li>
+          <li><strong>Material of Burner Grates:</strong> Cast iron for long-lasting durability</li>
+          <li><strong>Compatibility:</strong> Suitable for LPG and natural gas connections</li>
+          <li><strong>Color Options:</strong> Black, Silver</li>
+          <li><strong>Safety Features:</strong>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

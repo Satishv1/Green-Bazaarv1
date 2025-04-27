@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headphone </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA\71D1EB5iDzL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA\71mhR8Gb1kL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA\81oDuRn+BgL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA\619BAKErPQL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA\717l8t+5dEL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Headphone</h2>
+      <p class="price">₹1200</p>
+      <p class="description">
+        These over-ear headphones deliver exceptional sound quality with deep bass and clear highs. 
+        Equipped with soft memory foam ear cups for all-day comfort, they are perfect for music lovers and frequent travelers. 
+        The foldable design makes them easy to carry, 
+        while the built-in microphone and controls allow for convenient calls and music management
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Over-Ear Wireless Headphones</li>
+          <li><strong>Connectivity:</strong> Bluetooth 5.0</li>
+          <li><strong>Driver Size:</strong> 40mm dynamic drivers</li>
+          <li><strong>Battery Life:</strong> Up to 20 hours of continuous playback</li>
+          <li><strong>Charging Time:</strong> 2 hours for a full charge</li>
+          <li><strong>Noise Cancellation:</strong> Active noise cancellation (ANC) technology</li>
+          <li><strong>Microphone:</strong> Built-in microphone for hands-free calls</li>
+          <li><strong>Controls:</strong> On-ear touch controls for music, calls, and volume</li>
+          <li><strong>Comfort:</strong> Soft memory foam ear cups and adjustable headband</li>
+          <li><strong>Weight:</strong> 250 grams</li>
+          <li><strong>Color Options:</strong> Black, White, Blue</li>
+          <li><strong>Compatibility:</strong> Works with iOS, Android, and other Bluetooth-enabled devices</li>
+          <li><strong>Foldable Design:</strong> Compact and portable, perfect for travel</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

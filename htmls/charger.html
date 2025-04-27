@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charger </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA\51oZHMpbmxL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA\71FtOfe2mAL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA\71GFuVrfvLL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA\71qjSNyUGbL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA\71UtAXSKLDL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2> Charger</h2>
+      <p class="price">₹250</p>
+      <p class="description">
+        A fast-charging adapter designed to power your devices quickly and efficiently.
+         Compact and portable, it supports multiple device types and features overcharge 
+         protection for safe charging
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Fast Charging USB Wall Adapter</li>
+          <li><strong>Input Voltage:</strong> 100-240V AC</li>
+          <li><strong>Output Voltage:</strong> 5V DC / 9V DC / 12V DC (depending on device compatibility)</li>
+          <li><strong>Output Current:</strong> 2A (max) for fast charging</li>
+          <li><strong>Charging Speed:</strong> Fast charging up to 60% in 30 minutes</li>
+          <li><strong>Port Type:</strong> USB Type-A and USB Type-C</li>
+          <li><strong>Compatibility:</strong> Compatible with smartphones, tablets, and other USB-powered devices</li>
+          <li><strong>Material:</strong> High-quality plastic housing with heat-resistant design</li>
+          <li><strong>Safety Features:</strong>
+          
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

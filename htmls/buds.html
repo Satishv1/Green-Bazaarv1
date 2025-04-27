@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Earbuds</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA\71UEM43FlwL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA\71B+laF5-8L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA\81RsRH9RERL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA\81518H7GNwL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/81e-A+Qvm4L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Earbuds </h2>
+      <p class="price">₹1700</p>
+      <p class="description">
+        Compact wireless earbuds offering high-quality sound, secure fit, 
+        and up to 6 hours of playback. Perfect for workouts and everyday use,
+         with sweat and water resistance
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Wireless Bluetooth Earbuds</li>
+          <li><strong>Material:</strong> Premium plastic housing, silicone ear tips</li>
+          <li><strong>Connectivity:</strong> Bluetooth 5.0</li>
+          <li><strong>Battery Life:</strong> Up to 6 hours of continuous playback</li>
+          <li><strong>Charging Case Battery:</strong> 20 hours of additional battery life</li>
+          <li><strong>Charging Time:</strong> 1.5 hours for earbuds, 2 hours for case</li>
+          <li><strong>Driver Size:</strong> 10mm dynamic drivers</li>
+          <li><strong>Water Resistance:</strong> IPX5 (sweat and water-resistant)</li>
+          <li><strong>Color Options:</strong> Black, White, Blue</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+         
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Face Mask </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/61SvmYo2B-L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/61aq1oD-bvL._AC_UF350,350_QL80_FMwebp_.png" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/61JEAv0h9DL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/61kVjSQseJL._AC_UF350,350_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/61mCVW-VtpL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Face Mask</h2>
+      <p class="price">₹150</p>
+      <p class="description">
+        A comfortable and breathable face mask designed to provide protection while ensuring ease of wear.
+         Made from soft, high-quality fabric, it offers a secure fit and is ideal for everyday use,
+         whether for protection in public spaces or as part of a health regimen.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Reusable Cloth Face Mask</li>
+          <li><strong>Material:</strong> 100% cotton outer layer, soft polyester inner lining</li>
+          <li><strong>Layers:</strong> 3 layers for enhanced protection</li>
+          <li><strong>Size:</strong> One size fits most adults (adjustable ear loops)</li>
+          <li><strong>Color Options:</strong> Black, Blue, Gray, Red</li>
+          <li><strong>Design:</strong> Contoured fit with adjustable nose bridge for added comfort</li>
+          <li><strong>Washable:</strong> Machine washable and reusable</li>
+          <li><strong>Breathability:</strong> Breathable fabric for comfort during prolonged wear</li>
+          <li><strong>Usage:</strong> Ideal for everyday use, outdoor activities, and commuting</li>
+          <li><strong>Compliance:</strong> Meets CDC guidelines for cloth face coverings</li>
+          <li><strong>Packaging:</strong> Sold individually or in a pack of 3 or 5</li>
+          <li><strong>Warranty:</strong> No warranty (due to hygiene reasons)</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

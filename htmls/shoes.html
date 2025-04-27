@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoes </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/713G8fax-4L._AC_UY1000_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/61prV7e2svL._AC_UY300_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/71QTUlcu+cL._AC_UY1000_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/71SY+sIKWCL._AC_UY1000_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/71YxgqnC0ZL._AC_UY1000_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Shoes</h2>
+      <p class="price">₹750</p>
+      <p class="description">
+        A pair of stylish and comfortable shoes designed for both everyday wear and special occasions. Made with durable materials,
+         they offer a perfect balance of comfort and style, ensuring all-day support while keeping your feet looking great
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Men's Casual Shoes</li>
+          <li><strong>Material:</strong> Premium leather, synthetic, or canvas (depending on design)</li>
+          <li><strong>Sole Material:</strong> Rubber or EVA for durability and comfort</li>
+          <li><strong>Closure:</strong> Lace-up or slip-on style (depending on design)</li>
+          <li><strong>Insole:</strong> Soft, cushioned insole for all-day comfort</li>
+          <li><strong>Outsole:</strong> Non-slip, textured outsole for added grip</li>
+          <li><strong>Size Options:</strong> US 7 to US 12 (or as per sizing chart)</li>
+          <li><strong>Color Options:</strong> Black, Brown, White, Navy, Gray</li>
+          <li><strong>Design:</strong> Casual, sporty, or formal options available</li>
+          <li><strong>Comfort Features:</strong> Padded collar and tongue for extra support</li>
+          <li><strong>Occasions:</strong> Ideal for daily wear, office, casual outings, or travel</li>
+          <li><strong>Durability:</strong> High-quality construction for long-lasting wear</li>
+          <li><strong>Care Instructions:</strong> Spot clean or machine wash (depending on material)</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

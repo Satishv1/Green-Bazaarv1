@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pendrive </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA\51On4N2oBeL._AC_UF350,350_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA\51cBP0cdI-L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA\41vfwApxn-L._AC_UF350,350_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA\71oPCi9lC2L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA\81ebPG3eUGL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Pendrive</h2>
+      <p class="price">₹499</p>
+      <p class="description">
+        A compact and high-speed pendrive for easy storage and transfer of files. With a sleek design and ample storage capacity, 
+        it’s perfect for personal, professional, and academic use. 
+        Its plug-and-play feature makes it convenient and easy to use across various devices.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> USB 3.0 Pendrive</li>
+          <li><strong>Material:</strong> Durable plastic or metal casing</li>
+          <li><strong>Capacity Options:</strong> 16GB, 32GB, 64GB, 128GB, 256GB</li>
+          <li><strong>Connectivity:</strong> USB 3.0 for fast data transfer</li>
+          <li><strong>Transfer Speed:</strong> Up to 100 MB/s read speed, 40 MB/s write speed (varies by capacity)</li>
+          <li><strong>Compatibility:</strong> Works with Windows, macOS, and Linux</li>
+          <li><strong>Design:</strong> Slim, portable design with retractable USB connector (if applicable)</li>
+          <li><strong>Color Options:</strong> Black, Silver, Blue, Red</li>
+          <li><strong>Durability:</strong> Shock-resistant and waterproof (varies by model)</li>
+          <li><strong>Security Features:</strong> Some models offer password protection or encryption software</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

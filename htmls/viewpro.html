@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I phone 15 pro </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71d7rfSl0wL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/71d7rfSl0wL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/Untitled Project.jpg" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/712CBkmhLhL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/71Zzb1JjiNL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>I Phone 15 Pro</h2>
+      <p class="price">₹70,000</p>
+      <p class="description">
+        The iPhone 15 Pro is a powerful and sleek smartphone featuring cutting-edge technology. 
+        With a stunning display, enhanced performance, and improved camera capabilities, it offers a premium user experience. 
+        Designed with the latest A17 chip, a stunning ProMotion OLED display, 
+        and advanced camera features, the iPhone 15 Pro delivers speed, precision, and innovation all in one device.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> iPhone 15 Pro</li>
+          <li><strong>Display:</strong> 6.1-inch Super Retina XDR Display, ProMotion 120Hz, HDR10</li>
+          <li><strong>Processor:</strong> A17 Bionic chip with 6-core CPU, 5-core GPU, and 16-core Neural Engine</li>
+          <li><strong>Storage Options:</strong> 128GB, 256GB, 512GB, 1TB</li>
+          <li><strong>Operating System:</strong> iOS 17</li>
+          <li><strong>Rear Camera:</strong> Triple-camera system: 48MP main, 12MP ultra-wide, 12MP telephoto with 3x optical zoom</li>
+          <li><strong>Front Camera:</strong> 12MP TrueDepth camera with Night mode and 4K Dolby Vision HDR recording</li>
+          <li><strong>Battery Life:</strong> Up to 23 hours of video playback</li>
+          <li><strong>Charging:</strong> MagSafe and wireless charging support, Lightning port</li>
+          <li><strong>Water and Dust Resistance:</strong> IP68 (maximum depth of 6 meters up to 30 minutes)</li>
+          <li><strong>Build:</strong> Ceramic Shield front cover, textured matte glass back, and stainless steel frame</li>
+          <li><strong>Color Options:</strong> Space Black, Silver, Gold, Titanium Blue</li>
+          <li><strong>Connectivity:</strong> 5G capable, Wi-Fi 6, Bluetooth 5.3, Ultra-Wideband (UWB) support</li>
+          
+          
+          <li><strong>Warranty:</strong> 1-year limited warranty, 90 days of complimentary support</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>

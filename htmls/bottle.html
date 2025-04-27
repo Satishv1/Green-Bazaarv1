@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bottle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/61SIJM1jMGL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/61SMCmwN5bL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/61WDdS982SL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/61xZmTdpg3L._AC_UF894,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/51MDmtExIQL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Bottle</h2>
+      <p class="price">₹350</p>
+      <p class="description">
+        A bottle is a portable container used to store and carry liquids such as water, juice, or other beverages.
+         Designed with a secure cap or lid to prevent leaks,
+         it is made from materials like plastic, glass, or stainless steel for durability and convenience.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        
+        <ul>
+          <li><strong>Product Name:</strong> Reusable Water Bottle</li>
+          <li><strong>Material:</strong> BPA-free plastic / Stainless steel / Glass</li>
+          <li><strong>Capacity:</strong> 750 ml</li>
+          <li><strong>Dimensions:</strong> 25 cm (H) x 7 cm (D)</li>
+          <li><strong>Weight:</strong> 300 grams</li>
+          <li><strong>Color Options:</strong> Blue, Black, Pink, Transparent</li>
+          <li><strong>Suitable For:</strong> Hot and Cold beverages</li>
+          <li><strong>Temperature Retention:</strong> Up to 12 hours (for stainless steel version)</li>
+          <li><strong>Eco-Friendly:</strong> Reusable and recyclable material</li>
+          <li><strong>Warranty:</strong> 6-month manufacturer warranty</li>
+        </ul>
+        
+          
+          
+
+
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

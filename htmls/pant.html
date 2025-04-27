@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loose fit jeans </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71q5nfpQNhL._AC_UY1100_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/71pWuHKnshL._AC_UY1100_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/71wM6nVXmCL._AC_UY1100_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/81zwboBkPOL._AC_UY1100_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/712qyJL3sNL._AC_UY1100_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Loose Fit Jeans </h2>
+      <p class="price">₹799</p>
+      <p class="description">
+        Comfortable and stylish, these loose-fit jeans are designed for a relaxed, laid-back fit.
+         Crafted from durable denim, they offer a roomy silhouette that allows for easy movement while maintaining a classic look.
+         Perfect for everyday wear, they pair well with casual and semi-casual outfits
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Loose-Fit Denim Jeans</li>
+          <li><strong>Material:</strong> 100% Cotton (Denim)</li>
+          <li><strong>Fit:</strong> Loose fit with a relaxed, comfortable silhouette</li>
+          <li><strong>Waistband:</strong> Mid-rise waistband with belt loops</li>
+          <li><strong>Closure:</strong> Zipper fly with button closure</li>
+          <li><strong>Leg Style:</strong> Straight leg with extra room for movement</li>
+          <li><strong>Color Options:</strong> Blue, Black, Dark Wash, Light Wash</li>
+          <li><strong>Sizes Available:</strong> XS to XXL (check size chart for accurate fit)</li>
+          <li><strong>Care Instructions:</strong> Machine washable, tumble dry low</li>
+          <li><strong>Style:</strong> Casual, Everyday wear</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

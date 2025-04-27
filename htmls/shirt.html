@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shirt </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/61cKbL1-9GL._AC_UY1100_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/61paRre7RHL._AC_UY1100_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/71G5YrCKjDL._AC_UY1100_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/81ghkpOSvAL._AC_UY1100_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/81HBJi0l2AL._AC_UY1100_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Shirt</h2>
+      <p class="price">₹450</p>
+      <p class="description">
+        A stylish and comfortable shirt perfect for casual or semi-formal wear. 
+        Made from soft, breathable fabric, it offers a relaxed fit and is available in a variety of colors and patterns.
+         Ideal for daily wear, office settings, or weekend outings.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Men's Casual Shirt</li>
+          <li><strong>Material:</strong> 100% Cotton or Cotton-Blend</li>
+          <li><strong>Fit:</strong> Regular fit with a comfortable, relaxed feel</li>
+          <li><strong>Collar Type:</strong> Button-down collar or spread collar (depending on style)</li>
+          <li><strong>Sleeve Type:</strong> Long sleeves with adjustable cuffs or short sleeves (depending on style)</li>
+          <li><strong>Closure:</strong> Full button placket</li>
+          <li><strong>Color Options:</strong> White, Blue, Black, Red, Plaid patterns available</li>
+          <li><strong>Sizes Available:</strong> XS, S, M, L, XL, XXL</li>
+          <li><strong>Design:</strong> Solid, striped, checkered, or printed patterns</li>
+          <li><strong>Care Instructions:</strong> Machine washable, tumble dry low</li>
+          <li><strong>Occasions:</strong> Suitable for office wear, casual outings, or weekend gatherings</li>
+          <li><strong>Durability:</strong> Soft, durable fabric that withstands frequent wear and washing</li>
+          <li><strong>Warranty:</strong> 6-month manufacturer warranty (if applicable)</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

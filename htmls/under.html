@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Underwear </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71MFAVgDd4L._AC_UY350_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/61bFv98OuXL._AC_UY1100_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/71tt1Yv7EzL._AC_UY1100_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/81w3vBkYydL._AC_UY1100_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/91i421KbONL._AC_UY1100_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Underwear</h2>
+      <p class="price">₹250</p>
+      <p class="description">
+        Soft, comfortable, and breathable, these underwear are designed to provide all-day comfort and support.
+         Made from high-quality materials, they come in a variety of styles and sizes, 
+        making them perfect for everyday wear, ensuring a secure fit and comfort all day long.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Men's/Women's Cotton Underwear</li>
+          <li><strong>Material:</strong> 95% Cotton, 5% Elastane (for stretch and comfort)</li>
+          <li><strong>Fit:</strong> Comfortable fit with a flexible waistband</li>
+          <li><strong>Waistband:</strong> Soft, elastic waistband for a secure yet gentle hold</li>
+          <li><strong>Style:</strong> Briefs, Boxers, Boxer Briefs, Thongs, or Bikini style (depending on preference)</li>
+          <li><strong>Color Options:</strong> Black, White, Navy, Gray, and various prints</li>
+          <li><strong>Sizes Available:</strong> XS, S, M, L, XL, XXL (varies by style)</li>
+          <li><strong>Breathability:</strong> Made with breathable cotton for comfort throughout the day</li>
+          <li><strong>Stretch:</strong> Features a touch of elastane for a flexible, snug fit</li>
+          <li><strong>Care Instructions:</strong> Machine washable, tumble dry low</li>
+          <li><strong>Durability:</strong> High-quality stitching for long-lasting wear</li>
+          <li><strong>Occasions:</strong> Ideal for daily wear, sports, or sleepwear</li>
+          <li><strong>Gender:</strong> Available in both men's and women's styles</li>
+          <li><strong>Warranty:</strong> 6-month manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

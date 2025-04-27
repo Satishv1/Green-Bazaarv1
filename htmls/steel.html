@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Masala Box </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+   </header>
+  
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/71mjbft19sS._AC_UF350,350_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/91aZ83csorS._AC_UF350,350_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/61jYJXsCSNS._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/71Imm44uUQS._AC_UF350,350_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/718kePJHWMS._AC_UF894,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Masala Box </h2>
+      <p class="price">₹250</p>
+      <p class="description">
+        A durable and stylish steel masala box, designed to store and organize your spices efficiently.
+         Made from high-quality stainless steel, it helps keep your spices fresh and easily accessible.
+         Its compact design ensures that it fits well in any kitchen, offering convenience and longevity
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Stainless Steel Masala Box</li>
+          <li><strong>Material:</strong> High-quality stainless steel</li>
+          <li><strong>Capacity:</strong> 7-12 compartments (depending on design)</li>
+          <li><strong>Dimensions:</strong> 20 cm x 20 cm x 4 cm (varies by design)</li>
+          <li><strong>Design:</strong> Round, square, or rectangular box with individual spice compartments</li>
+          <li><strong>Lid Type:</strong> Airtight, with a secure lid to preserve freshness</li>
+          <li><strong>Compartments:</strong> Each compartment is ideal for one type of spice</li>
+          <li><strong>Color Options:</strong> Stainless steel finish (matte or polished)</li>
+          <li><strong>Easy to Clean:</strong> Dishwasher safe or easy to wipe clean with a damp cloth</li>
+          <li><strong>Usage:</strong> Perfect for storing a variety of spices, herbs, and condiments</li>
+          <li><strong>Durability:</strong> Rust-resistant and long-lasting</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

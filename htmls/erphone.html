@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Earphone </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+
+  <!-- Header -->
+  <header>
+    <h1>GREEN BAZAAR</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contacts Us</a>
+    </nav>
+   </header>
+
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA\61+0KSoFrOL._AC_UF1000,1000_QL80_FMwebp_.jpg" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA\61A6bLrcP6L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA\61h+2nZNCoL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA\61Y+UkIGVKL._AC_UF350,350_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA\71JHURKGUFL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Earphone</h2>
+      <p class="price">₹199</p>
+      <p class="description">
+        Compact and lightweight, these earphones provide crystal-clear sound and a comfortable fit. With an in-line microphone 
+        and remote, they allow you to easily control your music 
+        and take calls while on the go. Designed for daily use, they are perfect for commuting, workouts, and relaxation.
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Wired In-Ear Earphones</li>
+          <li><strong>Material:</strong> High-quality plastic housing, soft silicone ear tips</li>
+          <li><strong>Connectivity:</strong> 3.5mm audio jack (wired)</li>
+          <li><strong>Driver Size:</strong> 10mm dynamic drivers</li>
+          <li><strong>Frequency Response:</strong> 20Hz - 20kHz</li>
+          <li><strong>Impedance:</strong> 32 ohms</li>
+          <li><strong>Microphone:</strong> Built-in microphone for calls</li>
+          <li><strong>Control:</strong> In-line remote for volume and call control</li>
+          <li><strong>Compatibility:</strong> Works with smartphones, tablets, MP3 players, and laptops with a 3.5mm audio jack</li>
+          <li><strong>Color Options:</strong> Black, White, Blue, Red</li>
+          <li><strong>Cable Length:</strong> 1.2 meters</li>
+          <li><strong>Noise Isolation:</strong> Passive noise isolation with silicone ear tips</li>
+          <li><strong>Comfort:</strong> Ergonomic design for a secure and comfortable fit</li>
+          <li><strong>Warranty:</strong> 6-month manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

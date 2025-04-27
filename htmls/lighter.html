@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Highlighter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+  
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/61CNhAEhGtL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/41w0qbF0-cL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/51k29xbwUOL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/51UiwgyzrEL._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/61d7DXp8o7L._AC_UF1000,1000_QL80_FMwebp_.webp" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Highlighter</h2>
+      <p class="price">₹300</p>
+      <p class="description">
+        A vibrant, easy-to-use highlighter designed for smooth, consistent highlighting. 
+        Its bright ink and fine tip make it perfect for marking important text in books, notes, and documents. 
+        Ideal for students, professionals, and anyone needing to highlight key information
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Bright Neon Highlighter</li>
+          <li><strong>Ink Type:</strong> Water-based ink</li>
+          <li><strong>Tip Type:</strong> Chisel tip for broad and fine lines</li>
+          <li><strong>Color Options:</strong> Yellow, Pink, Blue, Green, Orange</li>
+          <li><strong>Drying Time:</strong> Fast-drying ink to prevent smearing</li>
+          <li><strong>Features:</strong>
+          <li><strong>Usage:</strong> Ideal for highlighting text in books, notes, and documents</li>
+          <li><strong>Dimensions:</strong> 13 cm (L) x 1.5 cm (W)</li>
+          <li><strong>Quantity:</strong> Single highlighter or set of 4 (depending on the pack)</li>
+          <li><strong>Durability:</strong> Long-lasting ink that doesn't fade easily</li>
+          <li><strong>Warranty:</strong> 6-month manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fry Pan </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+<!-- Header -->
+<header>
+  <h1>GREEN BAZAAR</h1>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contacts</a>
+  </nav>
+ </header>
+ 
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Image Gallery -->
+    <div class="product-gallery">
+      <img class="main-image" src="GREEN BZA/91l3WyJ9YFL._AC_UF350,350_QL80_FMwebp_.webp" alt="Front View" width="25px">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="GREEN BZA/714xsSplg2L._AC_UF894,1000_QL80_FMwebp_.webp" alt="Front View">
+        <img class="thumbnail" src="GREEN BZA/81RMXB5mkPL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Back View">
+        <img class="thumbnail" src="GREEN BZA/81a5FNqXRXL._AC_UF894,1000_QL80_FMwebp_.webp" alt="Side View">
+        <img class="thumbnail" src="GREEN BZA/71gV0svS4aL._AC_UF350,350_QL80_FMwebp_.png" alt="Box View">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <h2>Frypan</h2>
+      <p class="price">₹450</p>
+      <p class="description">
+        "A versatile and durable frypan, perfect for cooking a variety of dishes. Made with a non-stick coating for easy cleaning and even heat distribution, 
+        this pan is ideal for frying, sautéing, and searing. Its ergonomic handle ensures a comfortable grip while cooking."
+      </p>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li><strong>Product Name:</strong> Non-Stick Frypan</li>
+          <li><strong>Material:</strong> High-quality aluminum with non-stick coating</li>
+          <li><strong>Size:</strong> 26 cm diameter</li>
+          <li><strong>Handle:</strong> Heat-resistant, ergonomic plastic handle</li>
+          <li><strong>Base:</strong> Induction-compatible base for even heat distribution</li>
+          <li><strong>Non-Stick Coating:</strong> Scratch-resistant and easy to clean</li>
+          <li><strong>Temperature Resistance:</strong> Up to 200°C</li>
+          <li><strong>Weight:</strong> 500 grams</li>
+          <li><strong>Color Options:</strong> Black, Silver</li>
+          <li><strong>Dishwasher Safe:</strong> Yes, but hand wash is recommended for longer lifespan</li>
+          <li><strong>Compatibility:</strong> Suitable for all stovetops including gas, electric, and induction</li>
+          <li><strong>Usage:</strong> Ideal for frying, sautéing, and searing meats, vegetables, and eggs</li>
+          <li><strong>Warranty:</strong> 1-year manufacturer warranty</li>
+        </ul>
+        
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart"onclick="window.open('checkout.html','_blank');">Add to Cart</button>
+    </div>
+  </section>
+
+
+    </div>
+  </section>
+
+  <!-- JavaScript for changing main image -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        mainImage.src = this.src;
+        mainImage.alt = this.alt;
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025  Green Bazaar 
+ . Made By Indian. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
