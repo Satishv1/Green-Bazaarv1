@@ -47,6 +47,8 @@ nav a{
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
+    justify-content:center;
+    align-items:center;
 }
 
 .cta{
