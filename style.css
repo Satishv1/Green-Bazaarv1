@@ -105,7 +105,7 @@ body.electronics-page{
    flex-wrap:wrap;
    gap:50px;
    padding:40px 20px;
-   align-items: center;
+   align-items:center;
    display: flex;
    
    
@@ -118,7 +118,7 @@ body.electronics-page{
     width:300px;
     height: 220px;
     padding:10px;
-    text-align:center;
+    text-align:left;
     box-shadow:0 2px 6px rgba(0,0,0,0,1);
 }
 
