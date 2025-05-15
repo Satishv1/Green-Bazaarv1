@@ -31,7 +31,7 @@ nav a{
 }
 
 .categories{
-    display:flex;
+    padding:20px;
     justify-content:space-around;
     margin:40px 0px;
 }
@@ -89,6 +89,7 @@ body.electronics-page{
    gap:50px;
    padding:40px 20px;
    align-items: center;
+   display: flex;
    
    
 
